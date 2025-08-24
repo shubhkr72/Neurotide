@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@theme {
+  --color-primary: #3B82F6; /* blue-500 as primary accent */
+}
+
+body {
+  background-color: #0f1a27;
+  color: #e5e5e5;
+}
+
+.rich-text { 
+  font-size: 15px;  
+  color: #d1d5db; /* text-gray-300 */
+}
+
+.rich-text p { 
+  margin-bottom: 16px; 
+  color: #d1d5db; /* gray text */
+}
+
+.rich-text h1 { 
+  font-size: 36px; 
+  font-weight: 700; 
+  color: #f3f4f6 !important; /* text-gray-100 */
+  margin: 32px 0; 
+}
+
+.rich-text h2 { 
+  font-size: 22px; 
+  font-weight: 700; 
+  color: #f3f4f6 !important; 
+  margin: 24px 0; 
+}
+
+.rich-text h3 { 
+  font-size: 18px; 
+  font-weight: 600; 
+  color: #e5e7eb !important; /* gray-200 */
+  margin: 20px 0; 
+}
+
+.rich-text h4 { 
+  font-size: 16px; 
+  font-weight: 500; 
+  color: #d1d5db !important; /* gray-300 */
+  margin: 16px 0; 
+}
+
+.rich-text h5 { 
+  font-size: 14px; 
+  font-weight: 400; 
+  color: #9ca3af !important; /* gray-400 */
+  margin: 12px 0; 
+}
+
+.rich-text h6 { 
+  font-size: 12px; 
+  font-weight: 400; 
+  color: #6b7280 !important; /* gray-500 */
+  margin: 8px 0; 
+}
+
+.rich-text strong { 
+  font-weight: 700; 
+  color: #f9fafb; /* gray-50 */
+}
+
+.rich-text ol { 
+  margin-left: 30px; 
+  list-style-type: decimal; 
+}
+
+.rich-text ul { 
+  margin-left: 30px; 
+  list-style-type: disc; 
+}
+
+.rich-text li { 
+  margin-bottom: 8px; 
+  color: #d1d5db; 
+}
+
+.rich-text a { 
+  color: #3B82F6; /* blue-500 */
+  transition: color 0.2s;
+}
+
+.rich-text a:hover { 
+  color: #60a5fa; /* blue-400 */
+}
+
+
+
+
+
+
+
+
+
+

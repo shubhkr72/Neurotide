@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
 import { blogCategories } from '../assets/assets'
 import { motion } from "motion/react"
+import { useState } from 'react'
 import BlogCard from './BlogCard'
 import { useAppContext } from '../context/AppContext'
 
@@ -22,7 +22,7 @@ const BlogList = () => {
   return (
     <div className="py-1">
       {/* Category Buttons */}
-      <div className='flex justify-center gap-4 sm:gap-8 mb-1 relative flex-wrap'>
+      <div className='flex justify-center gap-2 sm:gap-5 mb-1 relative flex-wrap'>
         {blogCategories.map((item) => (
           <div key={item} className='relative'>
             <button

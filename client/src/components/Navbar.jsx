@@ -1,5 +1,4 @@
-import React from 'react';
-import { assets } from '../assets/assets';
+import {ArrowRight} from 'lucide-react'
 import { useAppContext } from '../context/AppContext';
 
 const Navbar = () => {
@@ -13,7 +12,7 @@ const Navbar = () => {
         onClick={() => navigate("/")}
       >
         <img
-          src={assets.logo}
+          src='protein.svg'
           alt="logo"
           className="w-30 sm:w-12 drop-shadow-md"
         />
@@ -24,14 +23,10 @@ const Navbar = () => {
       </div>
       <button
         onClick={() => navigate('/admin')}
-        className="flex items-center gap-2 rounded-full text-xs sm:text-sm cursor-pointer bg-blue-600 text-gray-100 px-4 sm:px-5 py-2 sm:py-2.5 shadow-md hover:bg-blue-500 transition-all duration-150 active:scale-[0.99]"
+        className="flex items-center gap-2 rounded-full text-xl sm:text-sm cursor-pointer bg-blue-600 text-gray-100 px-4 sm:px-5 py-2 sm:py-2.5 shadow-md hover:bg-blue-500 transition-all duration-150 active:scale-[0.99]"
       >
         {token ? 'Dashboard' : 'Login'}
-        <img
-          src={assets.arrow}
-          className="w-3.5 sm:w-3 h-auto"
-          alt="arrow"
-        />
+        <ArrowRight/>
       </button>
     </div>
   );

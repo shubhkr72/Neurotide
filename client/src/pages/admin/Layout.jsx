@@ -1,5 +1,3 @@
-import React from 'react'
-import { assets } from '../../assets/assets'
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../../components/admin/Sidebar'
 import { useAppContext } from '../../context/AppContext'
@@ -23,7 +21,7 @@ const Layout = () => {
           onClick={() => navigate("/")}
         >
           <img
-            src={assets.logo}
+            src='protein.svg'
             alt="logo"
             className="w-30 sm:w-12 drop-shadow-md"
           />

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { assets, dashboard_data } from '../../assets/assets'
 import BlogTableItem from '../../components/admin/BlogTableItem'
 import { useAppContext } from '../../context/AppContext'
 import toast from 'react-hot-toast'
-
+import {Podcast,Text,DraftingCompassIcon} from 'lucide-react'
 const Dashboard = () => {
 
     const [dashboardData, setDashboardData] = useState({
@@ -34,33 +33,33 @@ const Dashboard = () => {
         <div className='flex flex-wrap gap-4'>
 
             <div className=' flex items-center gap-4 bg-blue-600/20 p-4 min-w-58 rounded-3xl shadow cursor-pointer hover:scale-105 transition-all'>
-                <img className='' src={assets.dashboard_icon_1} alt="" />
+                <Podcast className=''  alt="" />
                 <div>
                     <p className='text-xl font-semibold text-gray-600'>{dashboardData.blogs}</p>
-                    <p className='text-gray-100 font-light'>Blogs</p>
+                    <p className='text-gray-100 font-light text-center'>Blogs</p>
                 </div>
             </div>
 
             <div className='flex items-center gap-4  bg-blue-600/20 p-4 min-w-58 rounded-3xl shadow cursor-pointer hover:scale-105 transition-all'>
-                <img src={assets.dashboard_icon_2} alt="" />
+                <Text alt="" />
                 <div>
                     <p className='text-xl font-semibold text-gray-600'>{dashboardData.comments}</p>
-                    <p className='text-gray-400 font-light'>Comments</p>
+                    <p className='text-gray-100 font-light'>Comments</p>
                 </div>
             </div>
 
             <div className='flex items-center gap-4  bg-blue-600/20 p-4 min-w-58 rounded-3xl shadow cursor-pointer hover:scale-105 transition-all'>
-                <img src={assets.dashboard_icon_3} alt="" />
+                <DraftingCompassIcon alt="" />
                 <div>
                     <p className='text-xl font-semibold text-gray-600'>{dashboardData.drafts}</p>
-                    <p className='text-gray-400 font-light'>Drafts</p>
+                    <p className='text-gray-100 font-light'>Drafts</p>
                 </div>
             </div>
         </div>
 
         <div>
             <div className='flex items-center gap-3 m-4 mt-6 text-gray-100'>
-                <img src={assets.dashboard_icon_4} alt="" />
+                <Text alt="" />
                 <p>Latest Blogs</p>
             </div>
 
@@ -76,9 +75,9 @@ const Dashboard = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {dashboardData.recentBlogs.map((blog, index)=>{
-                            return <BlogTableItem key={blog._id} blog={blog} fetchBlogs={fetchDashboard} index={index + 1}/>
-                        })}
+                        {dashboardData.recentBlogs.map((blog, index)=>(
+                            <BlogTableItem key={blog._id} blog={blog} fetchBlogs={fetchDashboard} index={index + 1}/>
+                        ))}
                     </tbody>
                 </table>
             </div>

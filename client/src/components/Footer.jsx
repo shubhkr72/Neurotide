@@ -29,8 +29,8 @@ const Footer = () => {
         <div className="flex flex-col gap-2 flex-1">
           <h3 className="font-semibold text-gray-200 mb-2">Social</h3>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">Twitter</a>
-          <a href="https://linkedin.com/shubham-sebrin" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">LinkedIn</a>
-          <a href="https://github.com/shubhkr" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">GitHub</a>
+          <a href="https://www.linkedin.com/in/shubham-sebrin" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">LinkedIn</a>
+          <a href="https://github.com/shubhkr72" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition">GitHub</a>
         </div>
       </div>
 
